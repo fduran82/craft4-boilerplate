@@ -1,0 +1,27 @@
+// Reset Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  // @apply mb-5;
+}
+
+h1 {
+  color: $color-primary-light;
+
+  @apply font-bold
+  uppercase
+  tracking-wide;
+}
+
+body {
+  background-color: $color-dark;
+  color: $color-white;
+  font-family: "Inter var";
+}

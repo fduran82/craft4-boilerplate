@@ -1,0 +1,30 @@
+<div class="relative w-full h-screen">
+    <div class="container absolute inset-0 flex flex-col items-center justify-center">
+				<div class="relative">
+					{% if entry.type == "home" %}
+						<div class="mb-4 text-4xl text-center">
+							{% if entry.image.one() %}
+								<div class="flex items-center justify-center">
+
+										{% set image = entry.image.one() %}
+										{% if image %}
+											<img class="page--home__intro--logo" src="{{ image.getUrl()}}" alt="" >
+										{% endif %}
+
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
+				{% if entry.headline %}
+				 	<h1 class="text-3xl sm:text-5xl">
+						{{ entry.headline }}
+					</h1>
+				{% endif %}
+				{% if entry.excerpt %}
+					<p class="w-10/12 mt-6 text-sm font-light leading-normal tracking-wide text-center sm:text-base">
+						{{ entry.excerpt }}
+					</p>
+				{% endif %}
+    </div>
+</div>

@@ -1,0 +1,75 @@
+dateModified: 1698854106
+email:
+  fromEmail: fduran@crescentheights.com
+  fromName: 'Craft Boilerplate'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: $SITE_IMAGES_PATH
+    type: craft\fs\Local
+    url: $SITE_IMAGES_URL
+meta:
+  __names__:
+    9bfe6cdc-5239-43d2-8f23-403e59e0b4eb: image # image
+    11bb2e53-e373-444d-9858-d719a33bda52: Editorial # Editorial
+    84b9ae4f-1c0a-49ac-9f94-0f7a79db2d64: Simple # Simple
+    431c4e5f-2958-4f56-ad4d-907c4b79af1a: 'Craft Boilerplate' # Craft Boilerplate
+    885f9cb0-7e81-45eb-bfa5-1093c96579f5: 'Craft Boilerplate' # Craft Boilerplate
+    2054fe4c-34cd-4e51-88d4-b1d957a75887: Common # Common
+    2004203b-cc0b-410b-89c8-4daab2857218: Home # Home
+    ba9148f2-4fcd-4f21-b98e-4c015e1d076d: Excerpt # Excerpt
+    d40e249a-a9ef-4917-9368-c40c23974f4e: Headline # Headline
+    e50416ba-3aa5-4f9f-8bfe-b92ee767f1ce: Home # Home
+    f663d3e4-2462-4d4a-8d23-ddad0f2e40b9: Images # Images
+plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  designtokens:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  position-fieldtype:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  spacing:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  templatecomments:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft Boilerplate'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

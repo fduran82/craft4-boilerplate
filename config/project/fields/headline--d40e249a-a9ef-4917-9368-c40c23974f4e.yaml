@@ -1,0 +1,19 @@
+columnSuffix: zozpoxhu
+contentColumnType: text
+fieldGroup: 11bb2e53-e373-444d-9858-d719a33bda52 # Editorial
+handle: headline
+instructions: 'Enter headline'
+name: Headline
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

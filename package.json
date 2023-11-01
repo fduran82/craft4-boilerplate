@@ -1,0 +1,56 @@
+{
+	"name": "craft-boilerplate",
+	"version": "1.0.0",
+	"description": "This project is based on the official [Craft 3 starter project](https://github.com/craftcms/craft/)",
+	"main": "webpack.mix.js",
+	"repository": {
+		"type": "git",
+		"url": "github.com:jmcgaha/craft-boilerplate.git"
+	},
+	"author": "Jonathan McGaha",
+	"bugs": {
+		"url": "https://github.com/jmcgaha/craft-boilerplate/issues"
+	},
+	"homepage": "https://github.com/jmcgaha/craft-boilerplate#readme",
+	"dependencies": {
+		"autoprefixer": "^10.4.16",
+		"browser-sync": "^2.29.3",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"dotenv": "^16.3.1",
+		"favicons": "^7.1.4",
+		"laravel-mix": "^6.0.49",
+		"laravel-mix-versionhash": "^2.0.1",
+		"postcss": "^8.4.31",
+		"sass": "^1.69.4",
+		"sass-loader": "^13.3.2",
+		"tailwindcss": "^3.3.3"
+	},
+	"devDependencies": {
+		"prettier": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.6",
+		"prettier-plugin-twig-melody": "^0.4.6"
+	},
+	"engines": {
+		"npm": ">=8.12.0",
+		"node": ">=18.4.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
+	"scripts": {
+		"dev": "mix",
+		"watch": "mix watch",
+		"prod": "mix --production",
+		"pull-database-prod": "./scripts/pull_db-prod.sh",
+		"pull-database-staging": "./scripts/pull_db-staging.sh",
+		"pull-assets-prod": "./scripts/pull_assets-prod.sh",
+		"pull-assets-staging": "./scripts/pull_assets-staging.sh",
+		"craft-migrate": "./craft migrate/all",
+		"craft-sync": "./craft project-config/sync",
+		"composer-update": "composer update",
+		"composer-install": "composer install",
+		"composer-outdated": "composer outdated",
+		"favicons": "node favicons.js"
+	}
+}

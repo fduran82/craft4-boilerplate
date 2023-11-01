@@ -1,0 +1,72 @@
+{
+	"name": "jmcgaha/craft-boilerplate",
+	"description": "Craft CMS",
+	"keywords": [
+		"craft",
+		"cms",
+		"craftcms",
+		"project"
+	],
+	"license": "0BSD",
+	"homepage": "https://craftcms.com/",
+	"type": "project",
+	"support": {
+		"email": "support@craftcms.com",
+		"issues": "https://github.com/craftcms/cms/issues",
+		"forum": "https://craftcms.stackexchange.com/",
+		"source": "https://github.com/craftcms/cms",
+		"docs": "https://craftcms.com/docs",
+		"rss": "https://craftcms.com/changelog.rss"
+	},
+	"require": {
+		"clubstudioltd/craft-asset-rev": "^7.0.0",
+		"craftcms/ckeditor": "^3.6.0",
+		"craftcms/cms": "^4.5.9",
+		"craftcms/redactor": "^3.0",
+		"hybridinteractive/craft-position-fieldtype": "^4.0.0",
+		"nystudio107/craft-closure": "^1.0.0",
+		"nystudio107/craft-templatecomments": "^4.0.0",
+		"sebastianlenz/linkfield": "^2.1.5",
+		"topshelfcraft/environment-label": "^4.0.3",
+		"trendyminds/craft-design-tokens": "^1.1.1",
+		"trendyminds/craft-spacing": "^1.0.1",
+		"vlucas/phpdotenv": "^5.5"
+	},
+	"require-dev": {
+		"craftcms/generator": "^1.6.1",
+		"yiisoft/yii2-shell": "^2.0.5"
+	},
+	"autoload": {
+		"psr-4": {}
+	},
+	"config": {
+		"allow-plugins": {
+			"craftcms/plugin-installer": true,
+			"yiisoft/yii2-composer": true
+		},
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "8.0.2"
+		}
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+			"@php -r \"file_exists('scripts/.env.sh') || copy('scripts/example.env.sh', 'scripts/.env.sh');\""
+		],
+		"post-create-project-cmd": [
+			"@php craft setup/welcome"
+		],
+		"post-update-cmd": [
+			"@php craft up",
+			"@php craft clear-caches/all"
+		],
+		"post-install-cmd": [
+			"@php craft up",
+			"@php craft clear-caches/all"
+		]
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

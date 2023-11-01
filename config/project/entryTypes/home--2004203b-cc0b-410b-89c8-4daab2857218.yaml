@@ -1,0 +1,82 @@
+fieldLayouts:
+  63e91be0-d18a-4dd5-a83a-0cb68ea42b2f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 13999382-56bd-45a3-868b-d2b639aecc5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9bfe6cdc-5239-43d2-8f23-403e59e0b4eb # image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e60a268-8579-4317-bcd6-0e0d8f4c4145
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d40e249a-a9ef-4917-9368-c40c23974f4e # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95ec1873-cf7c-419c-acee-97bf067637bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ba9148f2-4fcd-4f21-b98e-4c015e1d076d # Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9225fd8a-65dc-4a69-a3d1-3504e96a936d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aaf7a6d9-843f-44f6-842e-8ac6fff8dfcf
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: e50416ba-3aa5-4f9f-8bfe-b92ee767f1ce # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@import './variables';
+@import './base';
+@import './home';
+
+@tailwind utilities;
