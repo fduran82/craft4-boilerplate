@@ -1,5 +1,4 @@
-# Craft Boilerplate
-This project is based on the official [Craft 3 starter project](https://github.com/craftcms/craft/)
+# CraftBoilerplate
 
 Table of Contents
 =================
@@ -11,7 +10,7 @@ Table of Contents
 
 ## Node installation
 
-CraftCMS v3 projects based on `craft-boilerplate` utilize `nodejs`, `npm`, and `laravel mix`, in order to run SASS processing, javascript minifcation, and autoprefixing.
+CraftCMS project CraftBoilerplate utilize `nodejs`, `npm`, and `laravel mix`, in order to run SASS processing, javascript minifcation, and autoprefixing.
 
 Find out how to download and install `node` for your environment here (which includes `npm`): https://nodejs.org/en/download/
 
@@ -21,7 +20,7 @@ Find out how to download and install `node` for your environment here (which inc
 Follow these instructions when you need to start a brand new CraftCMS from scratch, utilizing this bootstrap project as a foundation and a starting point.
 
 ## New Project Setup
-1. Create a new directory for the new project and unzip the craft-boilerplate archive into this directory.
+1. Create a new directory for the new project and unzip the craftboilerplate archive into this directory.
 1. Open up a terminal and change the directory where you unzipped the archive above.
 1. Run `$ composer install --no-scripts`, which will download Craft and all associated plugins.
 1. Run `$ composer run-script post-create-project-cmd`, which will guide you through the "CraftCMS Initialization" steps that ultimately create an .env file and set your security key.
