@@ -29,12 +29,6 @@ module.exports = {
 				current: 'currentColor',
 				transparent: 'transparent',
 			},
-			fontFamily: {
-				sans: [
-					'Nunito Sans',
-					...defaultTheme.fontFamily.sans,
-				],
-			},
 			maxHeight: (theme) => ({
 				...theme('spacing'),
 			}),

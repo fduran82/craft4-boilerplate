@@ -1,23 +1,16 @@
 {
-	"name": "craft-boilerplate",
+	"name": "craftboilerplate",
 	"version": "1.0.0",
-	"description": "This project is based on the official [Craft 3 starter project](https://github.com/craftcms/craft/)",
+	"description": "This project serves as a boilerplate to generate a new Craft CMS 4 app.(Laravel Mix)",
 	"main": "webpack.mix.js",
-	"repository": {
-		"type": "git",
-		"url": "github.com:jmcgaha/craft-boilerplate.git"
-	},
-	"author": "Jonathan McGaha",
-	"bugs": {
-		"url": "https://github.com/jmcgaha/craft-boilerplate/issues"
-	},
-	"homepage": "https://github.com/jmcgaha/craft-boilerplate#readme",
+	"author": "Fidel Duran",
 	"dependencies": {
 		"autoprefixer": "^10.4.16",
 		"browser-sync": "^2.29.3",
 		"browser-sync-webpack-plugin": "^2.3.0",
 		"dotenv": "^16.3.1",
 		"favicons": "^7.1.4",
+		"jquery": "^3.7.1",
 		"laravel-mix": "^6.0.49",
 		"laravel-mix-versionhash": "^2.0.1",
 		"postcss": "^8.4.31",

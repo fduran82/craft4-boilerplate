@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ rev('/assets/app.css') }}">
 	{% include "_globals/favicons" %}
 	{% include "_globals/fonts" %}
+	<title> Craft Boilerplate</title>
 </head>
 
   {% set bodyClass %}
@@ -32,7 +33,7 @@
 
 <script src="{{ rev('/assets/manifest.js') }}"></script>
 {# If no 3rd-party JS libraries are being imported, vendor.js may not exist in production builds. Delete the following line if that's the case #}
-<script src="{{ rev('/assets/vendor.js') }}"></script>
+{# <script src="{{ rev('/assets/vendor.js') }}"></script> #}
 <script src="{{ rev('/assets/app.js') }}"></script>
 
 </body>
